@@ -1,5 +1,5 @@
 import { Grid, Typography, Button } from "@mui/material";
-import about1 from "../assets/about1.webp";
+import about1 from "../assets/about1.jpg";
 import "../App.css";
 import useTheme from "@mui/material/styles/useTheme";
 import useMediaQuery from "@mui/material/useMediaQuery";

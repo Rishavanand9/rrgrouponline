@@ -4,11 +4,10 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import d247Logo from "../assets/d247logo.png";
 import al777 from "../assets/al777.png";
 
-import cricket from "../assets/cricket.webp";
-import football from "../assets/football.webp";
-import tennis from "../assets/tennis.webp";
-import baskketball from "../assets/basketball.webp";
-import casino from "../assets/casino.webp";
+import casino from "../assets/casino.png";
+import board from "../assets/board.png";
+import cricket from "../assets/cricket.png";
+import football from "../assets/football.png";
 
 
 const sites = [
@@ -60,13 +59,13 @@ const sites2 = [
     url: "https://allpanel777.com/",
   },
   {
-    img: tennis,
+    img: board,
     url: "https://www.allpaanel.com/home",
   },
-  {
-    img: baskketball,
-    url: "https://www.247betbook.com/d/index.html#/home",
-  },
+  // {
+  //   img: baskketball,
+  //   url: "https://www.247betbook.com/d/index.html#/home",
+  // },
   {
     img: casino,
     url: "https://lotusbook247.games/",
@@ -140,28 +139,22 @@ function SitesV2() {
         Play First Choice Games for Gamers like yourself
       </Typography>
 
-      <Grid container spacing={1} style={{marginTop: '3em'}}>
-        {sites2.map((item, index) => {
-          return (
-            <Grid item xs={12} lg={2} md={2}>
-              <div
-                className={"siteItem"}
-                onClick={(e) => handleSiteClick(e, item?.url)}
-              >
-                <img
-                  key={index}
-                  src={item.img}
-                  alt={`site`}
-                  style={{
-                    width: `${imageSize}px`,
-                    maxHeight: 111,
-                  }}
-                />
-              </div>
-            </Grid>
-          );
-        })}
-      </Grid>
+      <div className="gameContainer">
+          {sites2.map((item, index) => (
+            <div className="gameItem">
+              <img
+                key={index}
+                src={item.img}
+                alt={`site`}
+                style={{
+                  width: `${imageSize}px`,
+                  height: "auto",
+                  borderRadius: "10em",
+                }}
+              />
+            </div>
+          ))}
+        </div>
 
       <Divider />
     </div>
