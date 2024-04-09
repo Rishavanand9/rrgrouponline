@@ -56,7 +56,7 @@ function HeaderV2() {
     // Add your Telegram click logic here
   };
 
-  const buttonPad = isMobile ? 6 : 20;
+  const buttonPad = isMobile ? 8 : 24;
 
   // Update the image dimensions and toolbar style based on the scroll position
   const logoStyle = scroll
@@ -94,35 +94,35 @@ function HeaderV2() {
         <Toolbar style={toolbarStyle}>
           {scroll && <img src={logo1} alt="logo" style={logoStyle} />}
           <IconButton
-            style={{ padding: buttonPad, background: "rgb(255 255 255 / 76%)" }}
+            style={{ padding: buttonPad, background: "#6b0303", color: "#fce973" }}
             color="inherit"
             onClick={handleWhatsAppClick}
           >
             <WhatsAppIcon fontSize={isMobile ? "default" : "large"} />
           </IconButton>
           <IconButton
-            style={{ padding: buttonPad, background: "rgb(255 255 255 / 76%)" }}
+            style={{ padding: buttonPad, background: "#6b0303", color: "#fce973" }}
             color="inherit"
             onClick={handleFacebookClick}
           >
             <FacebookIcon fontSize={isMobile ? "default" : "large"} />
           </IconButton>
           <IconButton
-            style={{ padding: buttonPad, background: "rgb(255 255 255 / 76%)" }}
+            style={{ padding: buttonPad, background: "#6b0303", color: "#fce973" }}
             color="inherit"
             onClick={handleInstagramClick}
           >
             <InstagramIcon fontSize={isMobile ? "default" : "large"} />
           </IconButton>
           <IconButton
-            style={{ padding: buttonPad, background: "rgb(255 255 255 / 76%)" }}
+            style={{ padding: buttonPad, background: "#6b0303", color: "#fce973" }}
             color="inherit"
             onClick={handleTelegramClick}
           >
             <TelegramIcon fontSize={isMobile ? "default" : "large"} />
           </IconButton>
           <IconButton
-            style={{ padding: buttonPad, background: "rgb(255 255 255 / 76%)" }}
+            style={{ padding: buttonPad, background: "#6b0303", color: "#fce973" }}
             color="inherit"
             onClick={() => {}}
           >
