@@ -3,7 +3,7 @@ import "./App.css";
 import { Divider, Typography } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import useTheme from "@mui/material/styles/useTheme";
-import img10 from "./assets/player.webp";
+import img10 from "./assets/player.jpg";
 
 const gridContent = [
   {
