@@ -23,30 +23,30 @@ const sites = [
     img: "https://dzm0kbaskt4pv.cloudfront.net/v17/static/themes/allpaanel.com/front/logo.png",
     url: "https://www.allpaanel.com/home",
   },
+  // {
+  //   img: "https://www.247betbook.com/d/betbook2472af08e475c66a982373f86f5eaa6a031.svg",
+  //   url: "https://www.247betbook.com/d/index.html#/home",
+  // },
   {
-    img: "https://www.247betbook.com/d/betbook2472af08e475c66a982373f86f5eaa6a031.svg",
-    url: "https://www.247betbook.com/d/index.html#/home",
-  },
-  {
-    img: "https://lotusbook247.games/assets/images/lotusbook247.games/logo.png",
-    url: "https://lotusbook247.games/",
+    img: "https://www.lotusbook247.com/m/assets/img/logo.svg",
+    url: "https://lotusbook247.com/",
   },
   {
     img: "https://d3.the100exch.com/assets/images/lotus-the100-logo.png",
     url: "https://d3.the100exch.com/",
   },
-  {
-    img: "https://lotus365.win/assets/img/lotus365/logo.png",
-    url: "https://lotus365.win/home",
-  },
-  {
-    img: "https://unicon365.com/assets/images/unicon365.com/logo.png",
-    url: "https://unicon365.com/",
-  },
-  {
-    img: "https://assets-bucket.b-cdn.net/magic-win-biz/cms-content/assets/images/icons/455.png",
-    url: "https://magicwin.biz/dashboard?selected=main",
-  },
+  // {
+  //   img: "https://lotus365.win/assets/img/lotus365/logo.png",
+  //   url: "https://lotus365.win/home",
+  // },
+  // {
+  //   img: "https://unicon365.com/assets/images/unicon365.com/logo.png",
+  //   url: "https://unicon365.com/",
+  // },
+  // {
+  //   img: "https://assets-bucket.b-cdn.net/magic-win-biz/cms-content/assets/images/icons/455.png",
+  //   url: "https://magicwin.biz/dashboard?selected=main",
+  // },
 ];
 
 const sites2 = [
@@ -117,8 +117,8 @@ function SitesV2() {
                   src={item.img}
                   alt={`site`}
                   style={{
-                    width: `${imageSize}px`,
-                    maxHeight: 111,
+                    width: isMobile ? '100%' :  `${imageSize}px`,
+                    maxHeight: 60,
                   }}
                 />
               </div>

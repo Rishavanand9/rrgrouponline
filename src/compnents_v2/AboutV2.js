@@ -8,7 +8,12 @@ import Counter from "./CounterV2";
 function AboutV2() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  
+
+  const handleWhatsAppClick = () => {
+    console.log("WhatsApp clicked");
+    window.open("https://wa.me/+919542877000");
+  };
+
   return (
     <div className="body-content" style={{ marginTop: "20em" }}>
       <Grid container spacing={1}>
@@ -49,6 +54,7 @@ function AboutV2() {
                   padding: '2em'
                 }}
                 className="move-image-animation"
+                onClick={handleWhatsAppClick}
               >
                 Get Your Id
               </Button>
