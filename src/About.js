@@ -3,7 +3,7 @@ import "./App.css";
 import { Divider, Typography } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import useTheme from "@mui/material/styles/useTheme";
-import img10 from "./assets/10.png";
+import img10 from "./assets/player.webp";
 
 const gridContent = [
   {
@@ -55,12 +55,12 @@ const About = () => {
         sx={{
           fontWeight: 600,
           fontSize: isMobile ? 25 : 60,
-          color: "white",
+          color: "#ece952",
           textShadow: "0px 0px 8px #FFFFFF",
         }}
         margin={2}
       >
-        Why RR Online Group?
+       Your ALL-IN-ONE Gaming Platform Management Solution
       </Typography>
       <div className={isMobile ? "aboutContainer1m" : "aboutContainer1"}>
         {gridContent?.map((item) => (
@@ -97,7 +97,7 @@ const About = () => {
       </div>
       <Divider />
 
-      <Typography
+      {/* <Typography
         sx={{
           fontWeight: 600,
           fontSize: isMobile ? 15 : 30,
@@ -108,7 +108,7 @@ const About = () => {
         }}
       >
         THE ONLY ONLINE BOOK TRUSTED BY THE ACROSS THE WORLD
-      </Typography>
+      </Typography> */}
       <Divider />
 
       <Typography
@@ -121,7 +121,7 @@ const About = () => {
         }}
       >
         FOR THOSE WHO ARE HUNGRY FOR WINNING, SO HOP ON THIS JOURNEY AND FEED
-        YOUR HUNGER. Our Book, Kalyan Book offers the most user-friendly gaming
+        YOUR HUNGER. RR online group offers the most user-friendly gaming
         platforms, we only provide those platforms which are tried, tested &
         most importantly trusted by the legends of online gaming world. Not only
         that our key is to help you win & that is why we offer INSTANT

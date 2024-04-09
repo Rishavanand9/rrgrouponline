@@ -1,11 +1,12 @@
 // App.js
 import React from "react";
 import "./App.css";
-import Header from "./Header";
-import Sites from "./Sites";
+// import Header from "./Header";
+// import Sites from "./Sites";
 import Ads from "./Ads";
 import About from "./About";
 import Contact from "./Contact";
+
 import img5 from "./assets/5.png";
 import img6 from "./assets/6.png";
 import img7 from "./assets/7.png";
@@ -16,9 +17,14 @@ import img16 from "./assets/16.png";
 import img13 from "./assets/13.png";
 import img14 from "./assets/14.png";
 import img15 from "./assets/15.png";
+
 // import useMediaQuery from "@mui/material/useMediaQuery";
 // import useTheme from "@mui/material/styles/useTheme";
 import { Grid } from "@mui/material";
+import HeaderV2 from "./compnents_v2/HeaderV2";
+import AboutV2 from "./compnents_v2/AboutV2";
+import InfoV2 from "./compnents_v2/InfoV2";
+import SitesV2 from "./compnents_v2/SitesV2";
 
 const slides = [img5, img6, img7, img8, img9, img11];
 
@@ -28,15 +34,17 @@ function App() {
   // const theme = useTheme();
 
   return <>
-  <div style={{textAlign: 'center'}}>
-    <Header />
+  <div style={{textAlign: 'center', gap: '2em'}}>
+    <HeaderV2 />
     <Grid container spacing={3}>
+      <Grid item lg={12} md={12} sm={12} xs={12}> <AboutV2 /></Grid>
       <Grid item lg={12} md={12} sm={12} xs={12}> <Ads slides={slides} /></Grid>
-      <Grid item lg={12} md={12} sm={12} xs={12}><About /></Grid>
-      <Grid item lg={12} md={12} sm={12} xs={12}><Sites /></Grid>
+      <Grid item lg={12} md={12} sm={12} xs={12}> <InfoV2 /></Grid>
+      <Grid item lg={12} md={12} sm={12} xs={12}> <About /></Grid>
+      <Grid item lg={12} md={12} sm={12} xs={12}><SitesV2 /></Grid>
       <Grid item lg={12} md={12} sm={12} xs={12}><Ads slides={slides2} /></Grid>
       <Grid item lg={12} md={12} sm={12} xs={12}><Contact /></Grid>
-    </Grid>
+    </Grid> 
     </div>
   </>;
 

@@ -20,9 +20,7 @@ function Contact() {
   return (
     <div className="body-content">
       <img
-        src={
-          logo1
-        }
+        src={logo1}
         alt={`site`}
         style={{
           width: `${imageSize}px`,
@@ -40,26 +38,35 @@ function Contact() {
       >
         Contact Us
       </Typography>
+
       <Button
-        className="WhatsappButton"
+        style={{
+          width: "50%",
+          textTransform: "none",
+          background: "rgb(107 3 3)",
+          color: "gold",
+          fontSize: isMobile ? 15 : 30,
+          padding: "1em 7em",
+        }}
         onClick={handleWhatsAppClick}
-        style={{ width: isMobile ? "65%" : "25%", borderRadius: "10em" }}
+        className="move-image-animation"
       >
         <WhatsAppIcon
           fontSize={isMobile ? "default" : "large"}
           sx={{ color: "#fff", fontSize: 30 }}
         />
-        <Typography
-          sx={{
-            fontWeight: 600,
-            fontSize: isMobile ? 15 : 30,
-            color: "white",
-            marginLeft: 2,
-          }}
-        >
-          +919542877000
-        </Typography>
+        +919542877000
       </Button>
+      <Typography
+        sx={{
+          fontWeight: 100,
+          fontSize: isMobile ? 10 : 15,
+          color: "white",
+          marginTop: '2em'
+        }}
+      >
+        © Copyright of RR Online Group
+      </Typography>
     </div>
   );
 }

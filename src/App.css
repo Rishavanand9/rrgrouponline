@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.innerApp{
+.innerApp {
   padding: 10em;
   background-color: #000;
 }
@@ -18,7 +18,7 @@
   overflow-y: auto;
   padding: 20px;
   margin: 2em 1em;
-  background: #1b1919a6;
+  background: rgba(0, 0, 0, 0.76);
   border-radius: 4em;
 }
 
@@ -35,9 +35,9 @@
   padding: 50px;
   margin: 10px;
   display: flex;
-  border-radius: 0em 0em 1em 0em;
-  border: 2px solid white;
-  background: rgb(0, 0, 0);
+  border-radius: 1em;
+  border: 2px solid #d39130;
+  background: rgba(0, 0, 0, 0);
 }
 
 .gameContainer {
@@ -56,7 +56,6 @@
 }
 
 .carousel-container {
-  margin-top: 20px;
   overflow: hidden;
   width: 100%;
   position: relative;
@@ -121,4 +120,50 @@
   border-radius: 30px 0 150px 0px; /* Curved on the left side, straight on the right */
   margin: 10px;
   padding: 20px;
+}
+
+@keyframes moveImage {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.move-image-animation {
+  animation: moveImage 1s ease-out forwards;
+}
+
+@media screen and (max-width: 600px) {
+  #counter {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#counter {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#counter .item {
+  background: #24222223;
+  padding: 10px 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 38px -8px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 0px 0px 38px -8px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 0px 38px -8px rgba(0, 0, 0, 0.34);
+}
+#counter .item .count {
+  color: #ffca4f;
+  margin-bottom: 5px;
+  font-size: 50px;
+}
+#counter .item h3 {
+  color: #aa0000;
+  text-transform: capitalize;
 }
