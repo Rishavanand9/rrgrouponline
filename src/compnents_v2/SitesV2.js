@@ -27,10 +27,10 @@ const sites = [
   //   img: "https://www.247betbook.com/d/betbook2472af08e475c66a982373f86f5eaa6a031.svg",
   //   url: "https://www.247betbook.com/d/index.html#/home",
   // },
-  {
-    img: "https://www.lotusbook247.com/m/assets/img/logo.svg",
-    url: "https://lotusbook247.com/",
-  },
+  // {
+  //   img: "https://www.lotusbook247.com/m/assets/img/logo.svg",
+  //   url: "https://lotusbook247.com/",
+  // },
   {
     img: "https://d3.the100exch.com/assets/images/lotus-the100-logo.png",
     url: "https://d3.the100exch.com/",
